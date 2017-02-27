@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="@dimen/cardview_compat_inset_shadow"
+        card_view:theme="@style/AppTheme"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="175dp"
+                android:id="@+id/frame_layout"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                >
+
+
+                <ImageView
+                    android:id="@+id/movie_poster"
+                    android:layout_width="130dp"
+                    android:layout_height="175dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+
+                    />
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/progressbar"
+
+                    />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/frame_layout"
+                android:layout_alignParentTop="true"
+                android:textColor="#000000"
+                android:text="This is movie name"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/movie_tagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_title"
+                android:layout_toRightOf="@id/frame_layout"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#000000"
+                android:text="Tag line"
+                />
+
+            <TextView
+                android:id="@+id/movie_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_tagline"
+                android:layout_toRightOf="@id/frame_layout"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#000000"
+                android:text="Year"
+                />
+
+            <TextView
+                android:id="@+id/movie_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_year"
+                android:layout_toRightOf="@id/frame_layout"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#000000"
+                android:text="Duration"
+                />
+
+            <TextView
+                android:id="@+id/movie_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_duration"
+                android:layout_toRightOf="@id/frame_layout"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#000000"
+                android:text="Director"
+                />
+
+            <RatingBar
+                android:id="@+id/movie_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame_layout"
+                android:text="Rating Bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:stepSize="0.5"
+                android:numStars="5"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:theme="@style/RatingBar"
+                />
+
+
+
+            <TextView
+                android:id="@+id/movie_cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_rating"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Cast name"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/movie_story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movie_cast"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Story"
+                android:textColor="#000000"
+                />
+
+            <!--    <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#6b6b66"
+                    android:layout_below="@id/movie_story"></View> -->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

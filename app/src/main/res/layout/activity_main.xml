@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0097a7"
+    android:gravity="center"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.imran.firebasedemo.MainActivity">
+
+    <!--<ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/movie_review" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="MOVIES REVIEW APP"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/yellow"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/yellow"
+
+        />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_id"
+
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/yellow"
+            android:hint="Email Id"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_id"
+        >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="@color/yellow"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/reg_button"
+        android:layout_below="@id/password_id"
+        android:textSize="15sp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:background="#f2fe71"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password ? "
+        android:id="@+id/reset_button"
+        android:layout_below="@id/reg_button"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/yellow"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:background="@null"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already registered,Login here "
+        android:id="@+id/login_button"
+        android:layout_below="@id/reset_button"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:background="@null"
+        />
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fb_login_btn"
+        android:textSize="15sp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_centerInParent="true"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FirebaseDemo</string>
+
+    <string name="minimum_password">Minimum password should be atleast 8 digits</string>
+    <string name="auth_failed">Authentication fail</string>
+    <string name="auth_sucess">Authentication sucess</string>
+    <string name="facebook_app_id">1131420700302198</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="title_activity_movie_list_">Movie_list_Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
